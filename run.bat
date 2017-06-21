@@ -5,7 +5,7 @@ set str=10
 set str1=3
 :begin
 
-ECHO ---开启被测试应用---
+ECHO ---开启被测试app---
 START adb shell am start -n hmtdemo.hmt.com.hmtdemo/hmtdemo.hmt.com.hmtdemo.hmt.MainActivity
 
 ECHO ---等待 %str% 秒 延时前：%time%---
@@ -19,7 +19,7 @@ ECHO ---等待%str1%秒 延时前：%time%---
 WScript sleep2.vbs
 ECHO ---延时后：%time%---
 
-ECHO ---开启被测试应用---
+ECHO ---重新进入被测试app---
 START adb shell am start -n hmtdemo.hmt.com.hmtdemo/hmtdemo.hmt.com.hmtdemo.hmt.MainActivity
 
 ECHO ---等待%str1%秒 延时前：%time%---

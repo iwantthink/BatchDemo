@@ -4,6 +4,12 @@ set num=0
 set str=3.5
 set str1=1.0
 
+ECHO ---请输入测试次数---
+set/p total=
+ECHO ---输入的测试次数为:%total% 次---
+ECHO ---
+ECHO ---
+
 ECHO ---开始测试时间：%time%---
 
 :begin
@@ -42,7 +48,7 @@ ECHO ---结束测试时间：%time%---
 ECHO ---
 ECHO ---
 
-if "%num%"=="20" (ECHO.循环结束了&&PAUSE) else goto begin
+if "%num%"=="%total%" (ECHO.循环结束了&&PAUSE) else goto begin
 
 
 
